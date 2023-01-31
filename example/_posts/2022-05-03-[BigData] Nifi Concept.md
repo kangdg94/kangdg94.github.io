@@ -1,4 +1,4 @@
-# [빅데이터] Nifi 개념
+# [BigData] Nifi Concept
 
 ---
 

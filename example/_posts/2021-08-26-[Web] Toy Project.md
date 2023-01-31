@@ -1,4 +1,4 @@
-# Web Service Project without Springboot
+# [Web] Service Project (without Springboot)
 
 ## 1. 제작배경
 
