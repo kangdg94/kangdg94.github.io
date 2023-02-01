@@ -17,7 +17,7 @@ author1:
 
   # This photo will be used in the about section
   picture:
-    path:            /assets/img/profile.jpg
+    path:            assets/img/profile.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
       1x:            https://via.placeholder.com/128x128
@@ -27,8 +27,8 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          kdk7854@github.com
+    #twitter:         <username>
+    github:          kangdg94
     email:           kdk7854@gmail.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
@@ -40,7 +40,7 @@ author1:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       <username>
+    instagram:       donggeunkang
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -58,7 +58,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        kang-dongkeun-190b6a225
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
