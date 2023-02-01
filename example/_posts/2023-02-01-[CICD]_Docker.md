@@ -1,4 +1,4 @@
-# [빅데이터] Docker
+# [CI/CD] Docker
 
 ## Docker 란 ?
 
@@ -11,7 +11,7 @@
 
 **VM vs 도커 차이점 :**
 
-![Docker](/assets/img/Docker.png)
+![docker](/assets/img/docker.png)
 
 > 하이퍼바이저: 단일 하드웨어에서 여러 다른 가상머신을 호스팅 할 수 있게 하는 프로그램
 > 
