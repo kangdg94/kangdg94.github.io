@@ -10,9 +10,7 @@ slug: Post
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  This is DonggeunKang's Post Page </br>
-  devlog & diary
-  Check out `_featured_tags/example.md` to learn how to create your own.
+  This is DonggeunKang's Post Page
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
