@@ -25,11 +25,11 @@
 - **소비된 메시지 추적(Commit과 Offset)** : 메시지는 지정된 Topic에 전달되고, Topic은 다시 여러개의 Partition으로 나뉨. Partition으로 나뉨. Partition은 log로 칸을 나누어 순차적으로 append됨. 메시지의 상대적인 위치를 offset이라 함.
 
 > 메시징 시스템은 Broker에게 소비된 메시지에 대한 메타데이터를 유지. 즉, 메시지가 Consumer에게 전달되면 Broker는 이를 로컬에 기록하거나 consumer의 승인을 기다림.
-> 
+
 - **Commit과 Offset** : Consumer의 poll은 이전의 Commit한 offset이 존재하면 해당 offset값을 commit한다. 이어서 poll이 진행되면 방금 전 commiut한 offset 이후의 메시지를 읽어와 처리
 
 > Consumer가 메시지 소비를 승인해야 메시지 삭제, 하지만 Consumer가 승인하기 전에 Broker가 실패로 인지하면 같은 메시지를 여러번 Consumer가 가져갈 수  있음. **멱등성을 고려해야함.** 특수한 상황으로 인해 여러번 받아서 여러번 처리다더라도 한번 처리한 것과 같은 결과를 가지도록 설계 해야함.
-> 
+
 - **Consumer Group** : 하나의 Topic을 구독하는 여러 Consumer들의 모임. Partition을 담당하는 Consumer 가 처리 불가 상태가 되어버리면 Partition과 Consumer를 재 조정 하여, 남은 Consumer Group 내의 Consumer가 Partition을 적절하게 나누어 처리 Consumer Group내에서 Consumer들 간의 offset정보를 공유하고 있기 때문에, 특정 Consumer가 처리 불가 상태가 되었을 때, 해당 Consumer가 처리한 마지막 offset부터 처리 할 수 있다. Partition을 나머지 Consumer들이 나누어 처리하도록 하는 것을 Rebalance라고 하며, 이를 위해 Consumer Group가 필요하다.
 
 > Consumer Group내의 Consumer들은 각기 다른 Partition에 연결되어야 한다. 이렇게 함으로서 Consumer의 메시지 처리 순서를 보장하게 된다.
