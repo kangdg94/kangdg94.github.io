@@ -1,4 +1,4 @@
-# [빅데이터] Kafka / REST Kafka
+# [BigData] Kafka / REST Kafka
 
 ![apache_kafka.jpeg](/assets/img/apache_kafka.jpeg)
 ## Kafka란 ?
