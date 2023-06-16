@@ -6,8 +6,10 @@ layout: list
 title: JAVA
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: JAVA
+slug: java
 
+permalink: /java/
+ 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
   About JAVA posts
