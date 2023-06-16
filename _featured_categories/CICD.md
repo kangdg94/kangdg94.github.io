@@ -1,13 +1,21 @@
+---
+# Featured tags need to have either the `list` or `grid` layout (PRO only).
 layout: list
-title: <아무거나 가능 But foler name with Capa>
+
+# The title of the tag's page.
+title: CICD
+
+# The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: CICD
-menu: true
-permalink: /CICD/
-order: 1
-sitemap: false
+
+# (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-    지도학습 비지도학습 강화학습**^^**
-# accent_color: rgb(38,139,210)
-# accent_image:
-#   background: rgb(32,32,32)
-#   overlay:    false
+  This is DonggeunKang's Post Page
+
+# (Optional) You can disable grouping posts by date.
+# no_groups: true
+
+# Exclude this example category from the sitemap.
+# DON'T USE THIS SETTING IN YOUR CATEGORIES!
+sitemap: false
+---
