@@ -52,18 +52,18 @@ author:
 menu:
   - title:             Post
     url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
-    url:               /about/
+  #- title:             Documentation
+#     url:               /docs/
   - title:             CI_CD
-    url:               /CI_CD/
+    url:               /ci_cd/
   - title:             JAVA
-    url:               /JAVA/
+    url:               /java/
   - title:             DevOps
-    url:               /DevOps/
+    url:               /devops/
   - title:             AI
-    url:               /AI/
+    url:               /ai/
+  - title:             About
+    url:               /about/    
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
