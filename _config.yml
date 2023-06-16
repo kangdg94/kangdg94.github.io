@@ -50,12 +50,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Post
-    url:               /example/
+  #- title:             Post
+   # url:               /example/
   #- title:             Documentation
 #     url:               /docs/
   - title:             CI_CD
-    url:               /ci_cd/
+    url:               /cicd/
   - title:             JAVA
     url:               /java/
   - title:             DevOps
