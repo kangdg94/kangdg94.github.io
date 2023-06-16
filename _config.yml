@@ -56,8 +56,14 @@ menu:
     url:               /docs/
   - title:             About
     url:               /about/
-  - title:             CICDMenu
-    url:               /cicd/
+  - title:             CI_CD
+    url:               /CI_CD/
+  - title:             JAVA
+    url:               /JAVA/
+  - title:             DevOps
+    url:               /DevOps/
+  - title:             AI
+    url:               /AI/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
