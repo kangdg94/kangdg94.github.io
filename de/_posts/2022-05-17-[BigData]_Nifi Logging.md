@@ -1,4 +1,4 @@
-# [BigData] Nifi Logging
+# [D/E] Nifi Logging
 
 ### Page Intrduce
 
