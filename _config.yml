@@ -54,12 +54,12 @@ menu:
    # url:               /example/
   #- title:             Documentation
 #     url:               /docs/
-  - title:             CI_CD
+  - title:             CI/CD
     url:               /cicd/
   - title:             JAVA
     url:               /java/
-  - title:             DevOps
-    url:               /devops/
+  - title:             D/E
+    url:               /de/  
   - title:             AI
     url:               /ai/
   - title:             About
