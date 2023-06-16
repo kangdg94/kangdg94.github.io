@@ -58,7 +58,7 @@ menu:
     url:               /cicd/
   - title:             JAVA
     url:               /java/
-  - title:             D_E
+  - title:             D/E
     url:               /de/  
   - title:             AI
     url:               /ai/
