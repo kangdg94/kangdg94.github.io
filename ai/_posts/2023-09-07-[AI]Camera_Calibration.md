@@ -53,7 +53,7 @@ retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(objectPoint
   - rvecs : 회전은 3×1 벡터로 지정. 벡터의 방향은 회전 축을 지정하고 벡터의 크기는 회전 각을 지정 ( $R$ )
   - tvecs : 3×1 이동 벡터 ( $t$ )
   - 
-# Experimental result
+## Experimental result
   - Origin Image
 
 ![cali6](/assets/img/cali6.jpg)
