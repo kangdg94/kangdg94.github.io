@@ -52,3 +52,15 @@ retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(objectPoint
   - distCoeffs : 렌즈 왜곡 계수 ( $\begin{bmatrix} R | t \end{bmatrix}$ )
   - rvecs : 회전은 3×1 벡터로 지정. 벡터의 방향은 회전 축을 지정하고 벡터의 크기는 회전 각을 지정 ( $R$ )
   - tvecs : 3×1 이동 벡터 ( $t$ )
+  - 
+# Experimental result
+  - Origin Image
+
+![cali4](/assets/img/cali4.jpg)
+
+  - Find Corners
+
+![cali5](/assets/img/cali4.jpg)
+
+  - Result
+![cali6](/assets/img/cali6.jpg)
