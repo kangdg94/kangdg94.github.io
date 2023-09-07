@@ -1,5 +1,5 @@
-# Basic Theory
-## Camera Calibration
+# Camera Calibration
+## Basic Theory
 * 3D좌표와 2D좌표를 사용하여 $K$ (3\*3 행렬), $R$ (3\*3 회전행렬), $t$(3\*1 이동벡터)를 찾아 내는 것
 
 ## Camera Calibration equation
