@@ -24,7 +24,7 @@ objp = np.zeros((1, CHECKERBOARD[0]*CHECKERBOARD[1], 3), np.float32)
 objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 ```
 **2. 여러 시점에서 체커 보드 이미지 캡쳐**
-![camearacalibration2](/assets/img/cameracalibration1.png)
+![camearacalibration3](/assets/img/cameracalibration3.png)
 **3. ChessboardCorners 메소드를 통하여 2D좌표 찾기**
 ```python
     flag = cv2.CALIB_CB_ADAPTIVE_THRESH+cv2.CALIB_CB_FAST_CHECK+cv2.CALIB_CB_NORMALIZE_IMAGE
