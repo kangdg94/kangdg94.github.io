@@ -1,13 +1,6 @@
 # Camera Calibration
 ## Basic Theory
 * 3D좌표와 2D좌표를 사용하여 $K$ (3\*3 행렬), $R$ (3\*3 회전행렬), $t$(3\*1 이동벡터)를 찾아 내는 것
-$$A_{m,n} =
- \begin{pmatrix}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
- \end{pmatrix}$$
 ## Camera Calibration equation
 * 3D좌표$( X_{\omega},  Y_{\omega},  Z_{\omega})$와 2D 이미지 투영 좌표$(u,v)$의 방정식
   -  $\begin{bmatrix} x' \\ y' \\ z' \end{bmatrix} = \mathbf{P} \begin{bmatrix} X_{\omega} \\ Y_{\omega} \\ Z_{\omega} \\1  \end{bmatrix}$
