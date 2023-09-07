@@ -56,12 +56,12 @@ retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(objectPoint
 # Experimental result
   - Origin Image
 
-![cali4](/assets/img/cali4.jpg)
+![cali6](/assets/img/cali6.jpg)
 
   - Find Corners
 
-![cali5](/assets/img/cali4.jpg)
+![cali5](/assets/img/cali5.jpg)
 
   - Result
     
-![cali6](/assets/img/cali6.jpg)
+![cali4](/assets/img/cali4.jpg)
