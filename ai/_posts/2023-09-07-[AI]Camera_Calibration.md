@@ -15,7 +15,7 @@
     - $\gamma$ : 축 사이의 기울기 (일반적으로 0)
 
 ## Camera Calibration Flowchart
-![image.png](/.attachments/image-bc7961eb-449a-4b23-a84a-0709ff6cd3be.png)
+![camearacalibration1](/assets/img/camearacalibration1.png)
 
 **1. 체커 보드를 통하여 3D좌표 정의**
 ```python
@@ -24,7 +24,7 @@ objp = np.zeros((1, CHECKERBOARD[0]*CHECKERBOARD[1], 3), np.float32)
 objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 ```
 **2. 여러 시점에서 체커 보드 이미지 캡쳐**
-![image.png](/.attachments/image-a4c74c59-43f8-469a-b5e2-ec09cde49c80.png)
+![camearacalibration2](/assets/img/camearacalibration2.png)
 **3. ChessboardCorners 메소드를 통하여 2D좌표 찾기**
 ```python
     flag = cv2.CALIB_CB_ADAPTIVE_THRESH+cv2.CALIB_CB_FAST_CHECK+cv2.CALIB_CB_NORMALIZE_IMAGE
