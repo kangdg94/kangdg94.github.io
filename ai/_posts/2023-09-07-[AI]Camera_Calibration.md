@@ -63,4 +63,5 @@ retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(objectPoint
 ![cali5](/assets/img/cali4.jpg)
 
   - Result
+    
 ![cali6](/assets/img/cali6.jpg)
