@@ -62,6 +62,8 @@ menu:
     url:               /de/  
   - title:             AI
     url:               /ai/
+  - title:             Monitoring
+    url:               /monitoring/    
   - title:             About
     url:               /about/    
 
