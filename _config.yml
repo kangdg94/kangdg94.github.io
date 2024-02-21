@@ -54,6 +54,8 @@ menu:
    # url:               /example/
   #- title:             Documentation
 #     url:               /docs/
+  - title:             ALL
+    url:               /all/
   - title:             CI/CD
     url:               /cicd/
   - title:             JAVA
