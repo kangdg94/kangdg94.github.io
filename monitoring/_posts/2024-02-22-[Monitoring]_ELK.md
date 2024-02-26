@@ -2,7 +2,7 @@
 
 ## 1. ELK 란?
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled.png)
+![elk_1](/assets/img/elk_1.png)
 
 **ELK**는 위 그림과 같이, 분석 및 저장 기능을 담당하는 **ElasticSearch**, 수집 기능을 하는 **Logstash**, 이를 시각화 하는 도구인 **Kibana**의 앞 글자만 딴 단어이다. 먼저 Prometheus를 사용 하였으나, prometheus는 서비스 로그들을 수집 하기 어려우며 polling방식이라 각 서비스들이 prometheus에 데이터를 전송 해주는 형태로, 서비스들 코드에 추가되어야 한다. 이는 서비스 운영에 대한 리스크가 존재하며, 포트 충돌도 우려가 되어 ELK 도입을 하게 되었다.
 
@@ -23,7 +23,7 @@
 
 ## 2. Beats 란?
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled%201.png)
+![elk_2](/assets/img/elk_2.png)
 
 **Beats :** 서버에 에이전트로 설치하여 다양한 유형의 데이터를 ElasticSearch 또는 Logstash에 전송하는 오픈 소스 데이터 발송자다.
 
@@ -34,7 +34,7 @@
 
 이번 ELK 구축하면서 설계한 데이터 파이프라인 아키텍쳐 이다.
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled%202.png)
+![elk_3](/assets/img/elk_3.png)
 
 - FileBeat만 Logstash로 보낸 이유는 로그 들을 Indexing하기 위함이다. Indexing 되어야 elasticsearch에서 분석을 할 때 검색이나 필터링이 용이하다. Metric정보들은 Indexing할 필요가 없으니 바로 elasticsearch로 전송.
 - Kibana는 단지 시각화 용도 이며(브라우저에 kibana포트로 접근) 분석이나 통계 검색 등 모두 뒷단인 elasticsearch에서 실행된다
@@ -201,19 +201,19 @@ volumes:
 
 - Service Log Streaming
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled%203.png)
+![elk_4](/assets/img/elk_4.png)
 
 Observability탭에서 Stream메뉴를 이용하면 Service Log들을 실시간으로 스트리밍 받아 볼 수 있다. 
 
 - Service Log Filter
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled%204.png)
+![elk_5](/assets/img/elk_5.png)
 
 Analytics탭에서 discover메뉴를 이용하면 index를 골라 필터링을 할 수 있다. 사진은 해당 인덱싱의 로그에서 context내용 중에 mcmot_01에서 error를 검색한 결과이다. context 말고 keyword, timestamp등 많은 내용들로 필터링 할 수 있으며 각 필터들을 or 혹은 and로 덧붙여 사용할 수 있다.
 
 - Metric 정보
 
-![Untitled](%5BMonitoring%5D%20ELK%20aae850685eb44370943639786e885b42/Untitled%205.png)
+![elk_6](/assets/img/elk_6.png)
 
 Observability탭에서 Host메뉴를 이용하면 호스트의 Metric정보들을 볼 수 있다. 아래 Dashboard에 시계열 그래프로도 표현이 되어 한 눈에 파악하기 쉽다.
 
