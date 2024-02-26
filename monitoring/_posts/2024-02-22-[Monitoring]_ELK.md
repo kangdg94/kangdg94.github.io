@@ -3,7 +3,7 @@
 ## 1. ELK 란?
 ![elk_6](/assets/img/elk_6.png)
 
-**ELK**는 위 그림과 같이, 분석 및 저장 기능을 담당하는 **ElasticSearch**, 수집 기능을 하는 **Logstash**, 이를 시각화 하는 도구인 **Kibana**의 앞 글자만 딴 단어이다. 먼저 Prometheus를 사용 하였으나, prometheus는 서비스 로그들을 수집 하기 어려우며 polling방식이라 각 서비스들이 prometheus에 데이터를 전송 해주는 형태로, 서비스들 코드에 추가되어야 한다. 이는 서비스 운영에 대한 리스크가 존재하며, 포트 충돌도 우려가 되어 ELK 도입을 하게 되었다.
+**ELK**는 위 그림과 같이, 분석 및 저장 기능을 담당하는 **ElasticSearch**, 수집 기능을 하는 **Logstash**, 이를 시각화 하는 도구인 **Kibana**의 앞 글자만 딴 단어이다. 먼저 Prometheus를 사용 하였으나, prometheus는 서비스 로그들을 수집 하기 어려우며 push방식이라 각 서비스들이 prometheus에 데이터를 전송 해주는 형태로, 서비스들 코드에 추가되어야 한다. 이는 서비스 운영에 대한 리스크가 존재하며, 포트 충돌도 우려가 되어 polling방식인 ELK 도입을 하게 되었다.
 
 **1) ElasticSearch**
 
