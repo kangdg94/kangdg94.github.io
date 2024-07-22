@@ -39,7 +39,7 @@ RAG는 다음과 같은 장점을 가지고 있습니다.
     - LLM은 쿼리 텍스트와 추출된 관련 정보를 바탕으로 최종 답변을 생성합니다.
     - 이 과정에서 정확한 출처에 기반한 답변이 가능해집니다.
 
-![camearacalibration1](/assets/img/cameracalibration1.png)
+![camearacalibration1](/assets/img/RAG_0.png)
 
 ## RAG가 최선일까?
 
@@ -128,7 +128,7 @@ Vector DB의 한계를 보완해 줄 지식 그래프는 기존의 유사성 기
 
 지식 그래프의 강점인 **관계성**과 **연결성**이 있는데 vector DB와 비교하며 관찰해보자
 
-![camearacalibration1](/assets/img/cameracalibration1.png)
+![camearacalibration1](/assets/img/RAG_1.png)
 
 **관계성**
 
@@ -140,7 +140,7 @@ Vector DB의 한계를 보완해 줄 지식 그래프는 기존의 유사성 기
 
 **연결성**
 
-![camearacalibration1](/assets/img/cameracalibration1.png)
+![camearacalibration1](/assets/img/RAG_2.png)
 
 지식 그래프는 ‘(노드) —(관계)→ (노드) —(관계)→ (노드) …’의 형태로 관련 있는 데이터를 모두 연결하여 저장하기 때문에 복잡한 질문에 대해서도 높은 답변 정확성을 보입니다.
 
